@@ -1,5 +1,5 @@
 Analysis & Synthesis report for project
-Mon Sep 18 17:29:50 2023
+Sat Sep 23 16:37:07 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -42,16 +42,16 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Sep 18 17:29:50 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sat Sep 23 16:37:07 2023       ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                      ; project                                     ;
-; Top-level Entity Name              ; frequencyDivider                            ;
+; Top-level Entity Name              ; digitalCounter                              ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 83                                          ;
-;     Total combinational functions  ; 83                                          ;
-;     Dedicated logic registers      ; 33                                          ;
-; Total registers                    ; 33                                          ;
-; Total pins                         ; 15                                          ;
+; Total logic elements               ; 42                                          ;
+;     Total combinational functions  ; 42                                          ;
+;     Dedicated logic registers      ; 12                                          ;
+; Total registers                    ; 12                                          ;
+; Total pins                         ; 18                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -65,7 +65,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE10F17C8       ;                    ;
-; Top-level entity name                                                      ; frequencyDivider   ; project            ;
+; Top-level entity name                                                      ; digitalCounter     ; project            ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -164,43 +164,43 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                            ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                     ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------+---------+
-; main.vhd                         ; yes             ; User VHDL File  ; D:/LearnNote/collegeNote/test_all/test5/main.vhd ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                     ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                              ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
+; src/top_level.vhd                ; yes             ; User VHDL File  ; D:/LearnNote/collegeNote/test_all/test7/src/top_level.vhd ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 83             ;
-;                                             ;                ;
-; Total combinational functions               ; 83             ;
-; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 24             ;
-;     -- 3 input functions                    ; 12             ;
-;     -- <=2 input functions                  ; 47             ;
-;                                             ;                ;
-; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 28             ;
-;     -- arithmetic mode                      ; 55             ;
-;                                             ;                ;
-; Total registers                             ; 33             ;
-;     -- Dedicated logic registers            ; 33             ;
-;     -- I/O registers                        ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 15             ;
-; Embedded Multiplier 9-bit elements          ; 0              ;
-; Maximum fan-out node                        ; clock_in~input ;
-; Maximum fan-out                             ; 33             ;
-; Total fan-out                               ; 369            ;
-; Average fan-out                             ; 2.53           ;
-+---------------------------------------------+----------------+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimated Total logic elements              ; 42               ;
+;                                             ;                  ;
+; Total combinational functions               ; 42               ;
+; Logic element usage by number of LUT inputs ;                  ;
+;     -- 4 input functions                    ; 16               ;
+;     -- 3 input functions                    ; 10               ;
+;     -- <=2 input functions                  ; 16               ;
+;                                             ;                  ;
+; Logic elements by mode                      ;                  ;
+;     -- normal mode                          ; 20               ;
+;     -- arithmetic mode                      ; 22               ;
+;                                             ;                  ;
+; Total registers                             ; 12               ;
+;     -- Dedicated logic registers            ; 12               ;
+;     -- I/O registers                        ; 0                ;
+;                                             ;                  ;
+; I/O pins                                    ; 18               ;
+; Embedded Multiplier 9-bit elements          ; 0                ;
+; Maximum fan-out node                        ; add_or_sub~input ;
+; Maximum fan-out                             ; 13               ;
+; Total fan-out                               ; 178              ;
+; Average fan-out                             ; 1.98             ;
++---------------------------------------------+------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -208,7 +208,7 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |frequencyDivider          ; 83 (83)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 15   ; 0            ; |frequencyDivider   ;              ;
+; |digitalCounter            ; 42 (42)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |digitalCounter     ;              ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -218,23 +218,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 33    ;
-; Number of registers using Synchronous Clear  ; 32    ;
+; Total registers                              ; 12    ;
+; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 33    ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |frequencyDivider|temp_counter[31] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |digitalCounter|count[0]~reg0 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
 
 
 +-------------------------------+
@@ -252,23 +252,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Mon Sep 18 17:29:47 2023
+    Info: Processing started: Sat Sep 23 16:37:04 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off project -c project
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file main.vhd
-    Info (12022): Found design unit 1: frequencyDivider-behave
-    Info (12023): Found entity 1: frequencyDivider
-Info (12127): Elaborating entity "frequencyDivider" for the top level hierarchy
+Info (12021): Found 2 design units, including 1 entities, in source file src/top_level.vhd
+    Info (12022): Found design unit 1: digitalCounter-behave
+    Info (12023): Found entity 1: digitalCounter
+Info (12127): Elaborating entity "digitalCounter" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 98 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 14 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 83 logic cells
+Info (21057): Implemented 60 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 12 output pins
+    Info (21061): Implemented 42 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4652 megabytes
-    Info: Processing ended: Mon Sep 18 17:29:50 2023
+    Info: Peak virtual memory: 4656 megabytes
+    Info: Processing ended: Sat Sep 23 16:37:07 2023
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:01
 
