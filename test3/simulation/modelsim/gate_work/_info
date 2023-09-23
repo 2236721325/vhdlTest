@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\LearnNote\collegeNote\test_all\test3\simulation\modelsim
+vcounter
+!i10b 1
+!s100 Hjdb4`LDbb>S39m2M@7MZ0
+I2gJ:Q1VbRB;YcSbJNRjVg2
+V2YF@o1W7P=gIM_:E?_CBm2
+Z1 dD:\LearnNote\collegeNote\test_all\test3\simulation\modelsim
+w1694864690
+8project.vo
+Fproject.vo
+L0 31
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1694864801.294000
+!s107 project.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|project.vo|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+. -O0

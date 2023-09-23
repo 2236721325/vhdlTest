@@ -1,0 +1,34 @@
+|first
+input[0] => led.IN0
+input[1] => led.IN1
+input[1] => led.IN0
+input[2] => led.IN1
+input[2] => led.IN0
+input[3] => led.IN1
+input[3] => led.IN0
+input[4] => led.IN1
+input[4] => led.IN0
+input[5] => led.IN1
+input[5] => led.IN0
+input[6] => led.IN1
+input[6] => led.IN0
+input[7] => led.IN1
+input[7] => led.IN0
+enable => led.IN1
+enable => led.IN1
+enable => led.IN1
+enable => led.IN1
+enable => led.IN1
+enable => led.IN1
+enable => led.IN1
+enable => led.IN1
+led[0] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[6] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[7] <= led.DB_MAX_OUTPUT_PORT_TYPE
+
+

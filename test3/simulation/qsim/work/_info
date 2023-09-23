@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\LearnNote\collegeNote\test_all\test3\simulation\qsim
+vcounter
+Z1 !s100 FdIA`c4ijm2`2UAX?@Io;0
+Z2 IKhe:gSNM@8Bm9V204@7@I1
+Z3 V2YF@o1W7P=gIM_:E?_CBm2
+Z4 dD:\LearnNote\collegeNote\test_all\test3\simulation\qsim
+Z5 w1694965015
+Z6 8project.vo
+Z7 Fproject.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|project.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1694965017.881000
+Z12 !s107 project.vo|
+!s101 -O0
+vcounter_vlg_check_tst
+!i10b 1
+Z13 !s100 [>M1_X02O8?hKYB]o>nI?2
+Z14 II8EVa>6:NkHo]4o4i73823
+Z15 VP749=6lk6Yg1oGoOTVcPo0
+R4
+Z16 w1694965014
+Z17 8project.vt
+Z18 Fproject.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z19 !s108 1694965018.051000
+Z20 !s107 project.vt|
+Z21 !s90 -work|work|project.vt|
+!s101 -O0
+R10
+vcounter_vlg_sample_tst
+!i10b 1
+Z22 !s100 C]9bOMVDQ@nXgjfYna^2=2
+Z23 Ik_R:_PCjXWjAiK>K6>aQj2
+Z24 V2g0RQfIUfIRedRPUReN@C3
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vcounter_vlg_vec_tst
+!i10b 1
+Z25 !s100 XC[hTb2nOQInHHK0;ZMH`1
+Z26 I164[U>XJKIn8_df@BSLb:0
+Z27 V@9OC]=hZZe;4GTW8>c1jE1
+R4
+R16
+R17
+R18
+Z28 L0 236
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

@@ -1,0 +1,463 @@
+$comment
+	File created using the following command:
+		vcd file project.msim.vcd -direction
+$end
+$date
+	Sun Sep 17 23:37:00 2023
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module counter_vlg_vec_tst $end
+$var reg 1 ! clock $end
+$var reg 1 " enable $end
+$var reg 1 # reset $end
+$var wire 1 $ carry $end
+$var wire 1 % count_result [3] $end
+$var wire 1 & count_result [2] $end
+$var wire 1 ' count_result [1] $end
+$var wire 1 ( count_result [0] $end
+$var wire 1 ) sampler $end
+$scope module i1 $end
+$var wire 1 * gnd $end
+$var wire 1 + vcc $end
+$var wire 1 , unknown $end
+$var tri1 1 - devclrn $end
+$var tri1 1 . devpor $end
+$var tri1 1 / devoe $end
+$var wire 1 0 count_result_a0_a_aoutput_o $end
+$var wire 1 1 count_result_a1_a_aoutput_o $end
+$var wire 1 2 count_result_a2_a_aoutput_o $end
+$var wire 1 3 count_result_a3_a_aoutput_o $end
+$var wire 1 4 carry_aoutput_o $end
+$var wire 1 5 clock_ainput_o $end
+$var wire 1 6 clock_ainputclkctrl_outclk $end
+$var wire 1 7 enable_ainput_o $end
+$var wire 1 8 temp_a0_a_a0_combout $end
+$var wire 1 9 reset_ainput_o $end
+$var wire 1 : reset_ainputclkctrl_outclk $end
+$var wire 1 ; temp_a1_a_a1_combout $end
+$var wire 1 < temp_a2_a_a2_combout $end
+$var wire 1 = temp_a3_a_a3_combout $end
+$var wire 1 > temp_a3_a_a4_combout $end
+$var wire 1 ? Equal0_a0_combout $end
+$var wire 1 @ temp [3] $end
+$var wire 1 A temp [2] $end
+$var wire 1 B temp [1] $end
+$var wire 1 C temp [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+0#
+0$
+0(
+0'
+0&
+0%
+x)
+0*
+1+
+x,
+1-
+1.
+1/
+00
+01
+02
+03
+04
+05
+06
+17
+18
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0C
+0B
+0A
+0@
+$end
+#5000
+1!
+15
+16
+0)
+1C
+1;
+08
+10
+1(
+#10000
+0!
+05
+06
+1)
+#15000
+1!
+15
+16
+0)
+1B
+0C
+18
+11
+00
+1'
+0(
+#20000
+0!
+05
+06
+1)
+#25000
+1!
+15
+16
+0)
+1C
+1<
+0;
+08
+10
+1(
+#30000
+0!
+05
+06
+1)
+#35000
+1!
+15
+16
+0)
+1A
+0B
+0C
+18
+12
+01
+00
+1&
+0'
+0(
+#40000
+0!
+05
+06
+1)
+#45000
+1!
+15
+16
+0)
+1C
+1;
+08
+10
+1(
+#50000
+0!
+05
+06
+1)
+#55000
+1!
+15
+16
+0)
+1B
+0C
+18
+11
+00
+1'
+0(
+#60000
+0!
+05
+06
+1)
+#65000
+1!
+15
+16
+0)
+1C
+1=
+0<
+0;
+08
+10
+1(
+1>
+#70000
+0!
+05
+06
+1)
+#75000
+1!
+15
+16
+0)
+1@
+0A
+0B
+0C
+0>
+0=
+18
+13
+02
+01
+00
+1%
+0&
+0'
+0(
+1>
+#80000
+0!
+05
+06
+1)
+#85000
+1!
+15
+16
+0)
+1C
+1;
+08
+10
+1(
+#90000
+0!
+05
+06
+1)
+#95000
+1!
+15
+16
+0)
+1B
+0C
+18
+11
+00
+1'
+0(
+1?
+14
+1$
+#100000
+0!
+05
+06
+1)
+#105000
+1!
+15
+16
+0)
+1C
+1<
+0;
+08
+10
+1(
+0?
+04
+0$
+#110000
+0!
+05
+06
+1)
+#115000
+1!
+15
+16
+0)
+1A
+0B
+0C
+18
+12
+01
+00
+1&
+0'
+0(
+#120000
+0!
+05
+06
+1)
+#125000
+1!
+15
+16
+0)
+1C
+1;
+08
+10
+1(
+#130000
+0!
+05
+06
+1)
+#135000
+1!
+15
+16
+0)
+1B
+0C
+18
+11
+00
+1'
+0(
+#140000
+0!
+05
+06
+1)
+#145000
+1!
+15
+16
+0)
+1C
+1=
+0<
+0;
+08
+10
+1(
+0>
+#150000
+1#
+0!
+19
+05
+1:
+06
+1)
+0C
+0B
+0A
+0@
+0=
+18
+1>
+00
+01
+02
+03
+0(
+0'
+0&
+0%
+0>
+#155000
+1!
+15
+16
+0)
+#160000
+0#
+0!
+09
+05
+0:
+06
+1)
+#165000
+1!
+15
+16
+0)
+1C
+1;
+08
+10
+1(
+#170000
+0!
+05
+06
+1)
+#175000
+1!
+15
+16
+0)
+1B
+0C
+18
+11
+00
+1'
+0(
+#180000
+0!
+05
+06
+1)
+#185000
+1!
+15
+16
+0)
+1C
+1<
+0;
+08
+10
+1(
+#190000
+0!
+05
+06
+1)
+#195000
+1!
+15
+16
+0)
+1A
+0B
+0C
+18
+12
+01
+00
+1&
+0'
+0(
+#200000
+0"
+0!
+07
+05
+06
+1)
+08
+#1000000

@@ -1,0 +1,20 @@
+|counter
+clock => temp[0].CLK
+clock => temp[1].CLK
+clock => temp[2].CLK
+clock => temp[3].CLK
+reset => temp[0].ACLR
+reset => temp[1].ACLR
+reset => temp[2].ACLR
+reset => temp[3].ACLR
+enable => temp[0].ENA
+enable => temp[1].ENA
+enable => temp[2].ENA
+enable => temp[3].ENA
+count_result[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+count_result[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+count_result[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
+count_result[3] <= temp[3].DB_MAX_OUTPUT_PORT_TYPE
+carry <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

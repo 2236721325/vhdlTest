@@ -1,0 +1,20 @@
+# Reading D:/Coding/FPGA/tool/Quartus-13.0.0.156/modelsim_ase/tcl/vsim/pref.tcl 
+# do project_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying D:\Coding\FPGA\tool\Quartus-13.0.0.156\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\Coding\FPGA\tool\Quartus-13.0.0.156\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {project.vo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# 
+# ** Error: (vish-42) Unsupported ModelSim library format for "D:/LearnNote/collegeNote/test_all/test3/simulation/modelsim/rtl_work". (Format: 4)

@@ -1,0 +1,32 @@
+|test1
+input[0] => Equal0.IN5
+input[0] => Equal1.IN5
+input[0] => Equal2.IN5
+input[0] => Equal3.IN5
+input[0] => Equal4.IN5
+input[0] => Equal5.IN5
+input[0] => Equal6.IN5
+input[1] => Equal0.IN4
+input[1] => Equal1.IN4
+input[1] => Equal2.IN4
+input[1] => Equal3.IN4
+input[1] => Equal4.IN4
+input[1] => Equal5.IN4
+input[1] => Equal6.IN4
+input[2] => Equal0.IN3
+input[2] => Equal1.IN3
+input[2] => Equal2.IN3
+input[2] => Equal3.IN3
+input[2] => Equal4.IN3
+input[2] => Equal5.IN3
+input[2] => Equal6.IN3
+output[0] <= Equal6.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= output.DB_MAX_OUTPUT_PORT_TYPE
+
+
