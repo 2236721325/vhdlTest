@@ -1,5 +1,5 @@
 EDA Netlist Writer report for project
-Sat Sep 23 12:13:08 2023
+Sun Sep 24 22:04:56 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sat Sep 23 12:13:08 2023 ;
+; EDA Netlist Writer Status ; Successful - Sun Sep 24 22:04:56 2023 ;
 ; Revision Name             ; project                               ;
 ; Top-level Entity Name     ; top_level                             ;
 ; Family                    ; Cyclone IV E                          ;
@@ -80,13 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Sat Sep 23 12:13:07 2023
+    Info: Processing started: Sun Sep 24 22:04:55 2023
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog project -c project
 Info (204019): Generated file project.vo in folder "D:/LearnNote/collegeNote/test_all/test6/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4519 megabytes
-    Info: Processing ended: Sat Sep 23 12:13:08 2023
+    Info: Processing ended: Sun Sep 24 22:04:56 2023
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 

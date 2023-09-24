@@ -1,5 +1,5 @@
 Analysis & Synthesis report for project
-Sat Sep 23 12:00:46 2023
+Sun Sep 24 21:58:35 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -43,7 +43,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Sep 23 12:00:46 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sun Sep 24 21:58:35 2023       ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                      ; project                                     ;
 ; Top-level Entity Name              ; top_level                                   ;
@@ -186,9 +186,9 @@ applicable agreement for further details.
 ;                                             ;             ;
 ; Total combinational functions               ; 98          ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 33          ;
+;     -- 4 input functions                    ; 32          ;
 ;     -- 3 input functions                    ; 14          ;
-;     -- <=2 input functions                  ; 51          ;
+;     -- <=2 input functions                  ; 52          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
 ;     -- normal mode                          ; 43          ;
@@ -202,8 +202,8 @@ applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ; Maximum fan-out node                        ; reset~input ;
 ; Maximum fan-out                             ; 37          ;
-; Total fan-out                               ; 456         ;
-; Average fan-out                             ; 2.40        ;
+; Total fan-out                               ; 454         ;
+; Average fan-out                             ; 2.39        ;
 +---------------------------------------------+-------------+
 
 
@@ -258,7 +258,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -268,7 +268,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Sat Sep 23 12:00:44 2023
+    Info: Processing started: Sun Sep 24 21:58:29 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off project -c project
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file src/frequencydivider.vhd
@@ -292,14 +292,14 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 124 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 125 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 12 output pins
-    Info (21061): Implemented 98 logic cells
+    Info (21061): Implemented 99 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4644 megabytes
-    Info: Processing ended: Sat Sep 23 12:00:46 2023
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Sun Sep 24 21:58:35 2023
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:01
 
 
