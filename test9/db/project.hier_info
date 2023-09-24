@@ -1,0 +1,60 @@
+|fullAdderVector
+num1[0] => fullAdder:inst_1.num1
+num1[1] => fullAdder:inst_2.num1
+num1[2] => fullAdder:inst_3.num1
+num1[3] => fullAdder:inst_4.num1
+num2[0] => fullAdder:inst_1.num2
+num2[1] => fullAdder:inst_2.num2
+num2[2] => fullAdder:inst_3.num2
+num2[3] => fullAdder:inst_4.num2
+sum[0] <= fullAdder:inst_1.sum
+sum[1] <= fullAdder:inst_2.sum
+sum[2] <= fullAdder:inst_3.sum
+sum[3] <= fullAdder:inst_4.sum
+sum[4] <= fullAdder:inst_4.carry_out
+
+
+|fullAdderVector|fullAdder:inst_1
+num1 => sum.IN0
+num1 => carry_out.IN0
+num2 => sum.IN1
+num2 => carry_out.IN1
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fullAdderVector|fullAdder:inst_2
+num1 => sum.IN0
+num1 => carry_out.IN0
+num2 => sum.IN1
+num2 => carry_out.IN1
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fullAdderVector|fullAdder:inst_3
+num1 => sum.IN0
+num1 => carry_out.IN0
+num2 => sum.IN1
+num2 => carry_out.IN1
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fullAdderVector|fullAdder:inst_4
+num1 => sum.IN0
+num1 => carry_out.IN0
+num2 => sum.IN1
+num2 => carry_out.IN1
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
