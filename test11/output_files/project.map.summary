@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Sep 24 21:37:49 2023
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : project
+Top-level Entity Name : RSTrigger
+Family : Cyclone IV E
+Total logic elements : 3
+    Total combinational functions : 3
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 4
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

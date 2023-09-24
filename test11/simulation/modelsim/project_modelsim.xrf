@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, D:/LearnNote/collegeNote/test_all/test11/simulation/qsim/project.sim.vwf
+source_file = 1, D:/LearnNote/collegeNote/test_all/test11/Waveform.vwf
+source_file = 1, D:/LearnNote/collegeNote/test_all/test11/src/top_level.vhd
+source_file = 1, D:/LearnNote/collegeNote/test_all/test11/db/project.cbx.xml
+source_file = 1, d:/coding/fpga/tool/quartus-13.0.0.156/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, d:/coding/fpga/tool/quartus-13.0.0.156/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, d:/coding/fpga/tool/quartus-13.0.0.156/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, d:/coding/fpga/tool/quartus-13.0.0.156/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = RSTrigger
+instance = comp, \R~input , R~input, RSTrigger, 1
+instance = comp, \Q~output , Q~output, RSTrigger, 1
+instance = comp, \Qn~output , Qn~output, RSTrigger, 1
+instance = comp, \S~input , S~input, RSTrigger, 1
+instance = comp, \comb~1 , comb~1, RSTrigger, 1
+instance = comp, \comb~0 , comb~0, RSTrigger, 1

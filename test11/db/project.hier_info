@@ -1,0 +1,9 @@
+|RSTrigger
+R => process_0.IN0
+R => process_0.IN0
+S => process_0.IN1
+S => process_0.IN1
+Q << Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
