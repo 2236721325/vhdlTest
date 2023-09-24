@@ -1,0 +1,46 @@
+|multiplier
+num1[0] => mult_result.OUTPUTSELECT
+num1[0] => mult_result.OUTPUTSELECT
+num1[0] => mult_result.OUTPUTSELECT
+num1[0] => mult_result.OUTPUTSELECT
+num1[1] => mult_result.OUTPUTSELECT
+num1[1] => mult_result.OUTPUTSELECT
+num1[1] => mult_result.OUTPUTSELECT
+num1[1] => mult_result.OUTPUTSELECT
+num1[1] => mult_result.OUTPUTSELECT
+num1[2] => mult_result.OUTPUTSELECT
+num1[2] => mult_result.OUTPUTSELECT
+num1[2] => mult_result.OUTPUTSELECT
+num1[2] => mult_result.OUTPUTSELECT
+num1[2] => mult_result.OUTPUTSELECT
+num1[3] => mult_result.OUTPUTSELECT
+num1[3] => mult_result.OUTPUTSELECT
+num1[3] => mult_result.OUTPUTSELECT
+num1[3] => mult_result.OUTPUTSELECT
+num1[3] => mult_result.OUTPUTSELECT
+num2[0] => mult_result.DATAB
+num2[0] => Add0.IN8
+num2[0] => Add1.IN8
+num2[0] => Add2.IN8
+num2[1] => mult_result.DATAB
+num2[1] => Add0.IN7
+num2[1] => Add1.IN7
+num2[1] => Add2.IN7
+num2[2] => mult_result.DATAB
+num2[2] => Add0.IN6
+num2[2] => Add1.IN6
+num2[2] => Add2.IN6
+num2[3] => mult_result.DATAB
+num2[3] => Add0.IN5
+num2[3] => Add1.IN5
+num2[3] => Add2.IN5
+result[0] <= mult_result.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= mult_result.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= mult_result.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= mult_result.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= mult_result.DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= mult_result.DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= mult_result.DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= mult_result.DB_MAX_OUTPUT_PORT_TYPE
+
+

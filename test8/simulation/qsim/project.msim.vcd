@@ -1,0 +1,180 @@
+$comment
+	File created using the following command:
+		vcd file project.msim.vcd -direction
+$end
+$date
+	Sun Sep 24 10:31:09 2023
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module multiplier_vlg_vec_tst $end
+$var reg 4 ! num1 [3:0] $end
+$var reg 4 " num2 [3:0] $end
+$var wire 1 # result [7] $end
+$var wire 1 $ result [6] $end
+$var wire 1 % result [5] $end
+$var wire 1 & result [4] $end
+$var wire 1 ' result [3] $end
+$var wire 1 ( result [2] $end
+$var wire 1 ) result [1] $end
+$var wire 1 * result [0] $end
+$var wire 1 + sampler $end
+$scope module i1 $end
+$var wire 1 , gnd $end
+$var wire 1 - vcc $end
+$var wire 1 . unknown $end
+$var tri1 1 / devclrn $end
+$var tri1 1 0 devpor $end
+$var tri1 1 1 devoe $end
+$var wire 1 2 Add1~16_combout $end
+$var wire 1 3 result[0]~output_o $end
+$var wire 1 4 result[1]~output_o $end
+$var wire 1 5 result[2]~output_o $end
+$var wire 1 6 result[3]~output_o $end
+$var wire 1 7 result[4]~output_o $end
+$var wire 1 8 result[5]~output_o $end
+$var wire 1 9 result[6]~output_o $end
+$var wire 1 : result[7]~output_o $end
+$var wire 1 ; num2[0]~input_o $end
+$var wire 1 < num1[0]~input_o $end
+$var wire 1 = mult_result~0_combout $end
+$var wire 1 > num2[1]~input_o $end
+$var wire 1 ? mult_result~1_combout $end
+$var wire 1 @ Add0~6_combout $end
+$var wire 1 A num1[1]~input_o $end
+$var wire 1 B Add0~18_combout $end
+$var wire 1 C num1[2]~input_o $end
+$var wire 1 D num2[2]~input_o $end
+$var wire 1 E mult_result~2_combout $end
+$var wire 1 F Add0~7 $end
+$var wire 1 G Add0~8_combout $end
+$var wire 1 H Add0~19_combout $end
+$var wire 1 I Add1~4_combout $end
+$var wire 1 J Add1~6_combout $end
+$var wire 1 K num2[3]~input_o $end
+$var wire 1 L mult_result~3_combout $end
+$var wire 1 M Add0~9 $end
+$var wire 1 N Add0~10_combout $end
+$var wire 1 O Add0~20_combout $end
+$var wire 1 P Add1~5 $end
+$var wire 1 Q Add1~7_combout $end
+$var wire 1 R Add1~9_combout $end
+$var wire 1 S Add2~2_combout $end
+$var wire 1 T num1[3]~input_o $end
+$var wire 1 U Add2~4_combout $end
+$var wire 1 V Add0~11 $end
+$var wire 1 W Add0~12_combout $end
+$var wire 1 X Add0~14_combout $end
+$var wire 1 Y Add1~8 $end
+$var wire 1 Z Add1~10_combout $end
+$var wire 1 [ Add1~17_combout $end
+$var wire 1 \ Add2~3 $end
+$var wire 1 ] Add2~5_combout $end
+$var wire 1 ^ Add2~7_combout $end
+$var wire 1 _ Add0~13 $end
+$var wire 1 ` Add0~15_combout $end
+$var wire 1 a Add0~17_combout $end
+$var wire 1 b Add1~11 $end
+$var wire 1 c Add1~12_combout $end
+$var wire 1 d Add1~18_combout $end
+$var wire 1 e Add2~6 $end
+$var wire 1 f Add2~8_combout $end
+$var wire 1 g Add2~10_combout $end
+$var wire 1 h Add1~13 $end
+$var wire 1 i Add1~14_combout $end
+$var wire 1 j Add2~9 $end
+$var wire 1 k Add2~11_combout $end
+$var wire 1 l Add2~16_combout $end
+$var wire 1 m Add2~12 $end
+$var wire 1 n Add2~13_combout $end
+$var wire 1 o Add2~15_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1010 !
+b11 "
+0*
+1)
+1(
+1'
+1&
+0%
+0$
+0#
+x+
+0,
+1-
+x.
+1/
+10
+11
+02
+03
+14
+15
+16
+17
+08
+09
+0:
+1;
+0<
+0=
+1>
+0?
+1@
+1A
+1B
+0C
+0D
+0E
+0F
+1G
+1H
+0I
+1J
+0K
+0L
+1M
+0N
+0O
+1P
+0Q
+0R
+1S
+1T
+1U
+0V
+0W
+0X
+0Y
+1Z
+0[
+0\
+1]
+1^
+1_
+0`
+0a
+0b
+0c
+0d
+1e
+0f
+0g
+1h
+0i
+0j
+0k
+0l
+1m
+0n
+0o
+$end
+#1000000
