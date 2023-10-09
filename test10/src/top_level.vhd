@@ -12,46 +12,66 @@ entity  pulseGenerator is
 		frequency_add,
 		reset:in std_logic;
 		fout:out std_logic
-		
 	);
 end pulseGenerator;
 
-
-architecture behave of pulseGenerator is	
+architecture behave of pulseGenerator is
+	signal slow_clock: std_logic := '0';
+	signal slow_counter:integer:=0;
+	signal counter:integer:=0;
+	signal n:integer:=9999;
+	signal m:integer:=5000;
 begin
 	process(clock)
-		variable counter:integer:=0;
-		variable n:integer:=9999;
-		variable m:integer:=5000;
 	begin
-		if(rising_edge(clock)) then
-			if(reset='0') then
-				counter:=0;
-			else 
-				counter:=counter+1;
-			end if;
-				
-			if(duty_sub='0') then 
-				n:=n-1;
-			end if;
-			if(duty_add='0') then 
-				n:=n+1;
-			end if;
-			if(frequency_sub='0') then 
-				m:=m-1;
-			end if;
-			if(frequency_add='0') then 
-				m:=+1;
-			end if;
+        if rising_edge(clock) then
+            if slow_counter = 999 then
+                slow_counter <= 0;
+                slow_clock <= not slow_clock;
+            else
+                slow_counter <= slow_counter + 1;
+            end if;
 			
+
+
+			if(reset='0') then
+				counter <=0;
+			else 
+				counter <=counter+1;
+			end if;
 			if(counter<m) then 
 				fout<='1';
 			elsif(counter<n) then
 				fout<='0';
 			else
-				counter:=0;
+				counter<=0;
 				fout<='1';
 			end if;
 		end if;
+    end process;
+
+	process(slow_clock)
+	begin
+		if rising_edge(slow_clock) then
+			if reset = '0' then
+				n <= 9999;
+				m <= 5000;
+			end if;
+			if(duty_sub='0') then 
+				n<=n-1;
+			end if;
+			if(duty_add='0') then 
+				n<=n+1;
+			end if;
+			if(frequency_sub='0') then 
+				m<=m-1;
+			end if;
+			if(frequency_add='0') then 
+				m<=m+1;
+			end if;
+		end if;
 	end process;
+
+	
+	
 end behave;

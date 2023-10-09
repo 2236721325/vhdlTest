@@ -11,6 +11,7 @@ entity digitalCounter is
 		clock:in std_logic;
 		step:in std_logic_vector(3 downto 0);
 		add_or_sub:in std_logic;
+		reset:in std_logic;
 		count:buffer std_logic_vector(11 downto 0)
 	);
 end digitalCounter;
@@ -29,6 +30,9 @@ begin
 			else 
 				count<=count-step;
 			end if;
+		end if;
+		if(reset='0') then 
+			count<= (others => '0');
 		end if;
 	end if;
 	end process;

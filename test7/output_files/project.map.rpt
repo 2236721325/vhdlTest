@@ -1,5 +1,5 @@
 Analysis & Synthesis report for project
-Sat Sep 23 16:37:07 2023
+Mon Sep 25 16:52:06 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -15,8 +15,9 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+ 10. Parameter Settings for Inferred Entity Instance: lpm_add_sub:Add0
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +43,16 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Sep 23 16:37:07 2023       ;
+; Analysis & Synthesis Status        ; Successful - Mon Sep 25 16:52:06 2023       ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                      ; project                                     ;
 ; Top-level Entity Name              ; digitalCounter                              ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 42                                          ;
-;     Total combinational functions  ; 42                                          ;
+; Total logic elements               ; 23                                          ;
+;     Total combinational functions  ; 23                                          ;
 ;     Dedicated logic registers      ; 12                                          ;
 ; Total registers                    ; 12                                          ;
-; Total pins                         ; 18                                          ;
+; Total pins                         ; 19                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -155,22 +156,29 @@ applicable agreement for further details.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ; < 0.1%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                     ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                              ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
-; src/top_level.vhd                ; yes             ; User VHDL File  ; D:/LearnNote/collegeNote/test_all/test7/src/top_level.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                   ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+---------+
+; src/top_level.vhd                ; yes             ; User VHDL File               ; D:/LearnNote/collegeNote/test_all/test7/src/top_level.vhd                                      ;         ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction                 ; d:/coding/fpga/tool/quartus-13.0.0.156/quartus/libraries/megafunctions/lpm_add_sub.tdf         ;         ;
+; addcore.inc                      ; yes             ; Megafunction                 ; d:/coding/fpga/tool/quartus-13.0.0.156/quartus/libraries/megafunctions/addcore.inc             ;         ;
+; look_add.inc                     ; yes             ; Megafunction                 ; d:/coding/fpga/tool/quartus-13.0.0.156/quartus/libraries/megafunctions/look_add.inc            ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                 ; d:/coding/fpga/tool/quartus-13.0.0.156/quartus/libraries/megafunctions/bypassff.inc            ;         ;
+; altshift.inc                     ; yes             ; Megafunction                 ; d:/coding/fpga/tool/quartus-13.0.0.156/quartus/libraries/megafunctions/altshift.inc            ;         ;
+; alt_stratix_add_sub.inc          ; yes             ; Megafunction                 ; d:/coding/fpga/tool/quartus-13.0.0.156/quartus/libraries/megafunctions/alt_stratix_add_sub.inc ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                 ; d:/coding/fpga/tool/quartus-13.0.0.156/quartus/libraries/megafunctions/aglobal130.inc          ;         ;
+; db/add_sub_nvi.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/LearnNote/collegeNote/test_all/test7/db/add_sub_nvi.tdf                                     ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------+
@@ -178,38 +186,40 @@ applicable agreement for further details.
 +---------------------------------------------+------------------+
 ; Resource                                    ; Usage            ;
 +---------------------------------------------+------------------+
-; Estimated Total logic elements              ; 42               ;
+; Estimated Total logic elements              ; 23               ;
 ;                                             ;                  ;
-; Total combinational functions               ; 42               ;
+; Total combinational functions               ; 23               ;
 ; Logic element usage by number of LUT inputs ;                  ;
-;     -- 4 input functions                    ; 16               ;
-;     -- 3 input functions                    ; 10               ;
-;     -- <=2 input functions                  ; 16               ;
+;     -- 4 input functions                    ; 5                ;
+;     -- 3 input functions                    ; 12               ;
+;     -- <=2 input functions                  ; 6                ;
 ;                                             ;                  ;
 ; Logic elements by mode                      ;                  ;
-;     -- normal mode                          ; 20               ;
-;     -- arithmetic mode                      ; 22               ;
+;     -- normal mode                          ; 11               ;
+;     -- arithmetic mode                      ; 12               ;
 ;                                             ;                  ;
 ; Total registers                             ; 12               ;
 ;     -- Dedicated logic registers            ; 12               ;
 ;     -- I/O registers                        ; 0                ;
 ;                                             ;                  ;
-; I/O pins                                    ; 18               ;
+; I/O pins                                    ; 19               ;
 ; Embedded Multiplier 9-bit elements          ; 0                ;
 ; Maximum fan-out node                        ; add_or_sub~input ;
-; Maximum fan-out                             ; 13               ;
-; Total fan-out                               ; 178              ;
-; Average fan-out                             ; 1.98             ;
+; Maximum fan-out                             ; 14               ;
+; Total fan-out                               ; 135              ;
+; Average fan-out                             ; 1.85             ;
 +---------------------------------------------+------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |digitalCounter            ; 42 (42)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |digitalCounter     ;              ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                         ;
++------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                         ; Library Name ;
++------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+
+; |digitalCounter                    ; 23 (19)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |digitalCounter                                             ;              ;
+;    |lpm_add_sub:Add0|              ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |digitalCounter|lpm_add_sub:Add0                            ;              ;
+;       |add_sub_nvi:auto_generated| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |digitalCounter|lpm_add_sub:Add0|add_sub_nvi:auto_generated ;              ;
++------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -219,7 +229,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 12    ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Clear  ; 12    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -233,8 +243,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
-; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |digitalCounter|count[0]~reg0 ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |digitalCounter|count[0]~reg0 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_add_sub:Add0 ;
++------------------------+--------------+---------------------------+
+; Parameter Name         ; Value        ; Type                      ;
++------------------------+--------------+---------------------------+
+; LPM_WIDTH              ; 12           ; Untyped                   ;
+; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                   ;
+; LPM_DIRECTION          ; DEFAULT      ; Untyped                   ;
+; ONE_INPUT_IS_CONSTANT  ; NO           ; Untyped                   ;
+; LPM_PIPELINE           ; 0            ; Untyped                   ;
+; MAXIMIZE_SPEED         ; 5            ; Untyped                   ;
+; REGISTERED_AT_END      ; 0            ; Untyped                   ;
+; OPTIMIZE_FOR_SPEED     ; 5            ; Untyped                   ;
+; USE_CS_BUFFERS         ; 1            ; Untyped                   ;
+; CARRY_CHAIN            ; MANUAL       ; Untyped                   ;
+; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH        ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                   ;
+; USE_WYS                ; OFF          ; Untyped                   ;
+; STYLE                  ; FAST         ; Untyped                   ;
+; CBXI_PARAMETER         ; add_sub_nvi  ; Untyped                   ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY              ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE              ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE            ;
++------------------------+--------------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-------------------------------+
@@ -252,23 +290,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Sat Sep 23 16:37:04 2023
+    Info: Processing started: Mon Sep 25 16:52:03 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off project -c project
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file src/top_level.vhd
     Info (12022): Found design unit 1: digitalCounter-behave
     Info (12023): Found entity 1: digitalCounter
 Info (12127): Elaborating entity "digitalCounter" for the top level hierarchy
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278002): Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "Add0"
+Info (12130): Elaborated megafunction instantiation "lpm_add_sub:Add0"
+Info (12133): Instantiated megafunction "lpm_add_sub:Add0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTH" = "12"
+    Info (12134): Parameter "LPM_DIRECTION" = "DEFAULT"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "ONE_INPUT_IS_CONSTANT" = "NO"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_nvi.tdf
+    Info (12023): Found entity 1: add_sub_nvi
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 60 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
+Info (21057): Implemented 42 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
     Info (21059): Implemented 12 output pins
-    Info (21061): Implemented 42 logic cells
+    Info (21061): Implemented 23 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4656 megabytes
-    Info: Processing ended: Sat Sep 23 16:37:07 2023
+    Info: Peak virtual memory: 4642 megabytes
+    Info: Processing ended: Mon Sep 25 16:52:06 2023
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:01
 

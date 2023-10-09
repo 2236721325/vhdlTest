@@ -57,24 +57,23 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE simulation/qsim/project.sim.vwf
 set_global_assignment -name VHDL_FILE main.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
-set_location_assignment PIN_M1 -to clock
-set_location_assignment PIN_T9 -to key[3]
-set_location_assignment PIN_R9 -to key[2]
-set_location_assignment PIN_T10 -to key[1]
-set_location_assignment PIN_R10 -to key[0]
-set_location_assignment PIN_D12 -to segment[7]
-set_location_assignment PIN_D11 -to segment[6]
-set_location_assignment PIN_C11 -to segment[5]
-set_location_assignment PIN_E10 -to segment[4]
-set_location_assignment PIN_D9 -to segment[3]
-set_location_assignment PIN_C9 -to segment[2]
-set_location_assignment PIN_E9 -to segment[1]
-set_location_assignment PIN_D16 -to segment[0]
-set_location_assignment PIN_D15 -to selector[2]
-set_location_assignment PIN_C16 -to selector[1]
-set_location_assignment PIN_F15 -to selector[0]
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/LearnNote/collegeNote/test_all/test5/Waveform.vwf"
+set_location_assignment PIN_M1 -to clock_in
+set_location_assignment PIN_N6 -to clock_out
+set_location_assignment PIN_R10 -to rate_value[0]
+set_location_assignment PIN_T10 -to rate_value[1]
+set_location_assignment PIN_R9 -to rate_value[2]
+set_location_assignment PIN_T9 -to rate_value[3]
+set_location_assignment PIN_N9 -to rate_value[4]
+set_location_assignment PIN_T8 -to rate_value[5]
+set_location_assignment PIN_M8 -to rate_value[6]
+set_location_assignment PIN_N8 -to rate_value[7]
+set_location_assignment PIN_P8 -to rate_value[8]
+set_location_assignment PIN_L7 -to rate_value[9]
+set_location_assignment PIN_M7 -to rate_value[10]
+set_location_assignment PIN_P6 -to rate_value[11]
+set_location_assignment PIN_E16 -to reset
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -36,12 +36,12 @@ begin
         when "0111" => segment<= "00000111"; --7
         when "1000" => segment<= "01111111"; --8
         when "1001" => segment<= "01101111"; --9
-		  when "1010" => segment <= "01111001"; --A
-		  when "1011" => segment <= "01110000"; --B
+		  when "1010" => segment <= "01110111"; --A
+		  when "1011" => segment <= "01111111"; --B
 		  when "1100" => segment <= "00111001"; --C
-		  when "1101" => segment <= "01011110"; --D
+		  when "1101" => segment <= "00111111"; --D
 		  when "1110" => segment <= "01111001"; --E
-		  when others => segment<= "01110001"; --F
+		  when others => segment<=  "01110001"; --F
 
     end case ;
   end process ; -- 

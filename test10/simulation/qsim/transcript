@@ -16,13 +16,13 @@
 # vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.pulseGenerator_vlg_vec_tst 
 # Loading work.pulseGenerator_vlg_vec_tst
 # Loading work.pulseGenerator
-# Loading cycloneive_ver.cycloneive_lcell_comb
 # Loading altera_ver.dffeas
-# Loading cycloneive_ver.cycloneive_io_obuf
-# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
 # Loading cycloneive_ver.cycloneive_clkctrl
 # Loading cycloneive_ver.cycloneive_mux41
 # Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
 # Loading work.pulseGenerator_vlg_sample_tst
 # Loading work.pulseGenerator_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW

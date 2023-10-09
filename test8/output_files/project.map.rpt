@@ -1,5 +1,5 @@
 Analysis & Synthesis report for project
-Sun Sep 24 10:29:39 2023
+Mon Sep 25 17:07:00 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Sep 24 10:29:39 2023       ;
+; Analysis & Synthesis Status        ; Successful - Mon Sep 25 17:07:00 2023       ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                      ; project                                     ;
 ; Top-level Entity Name              ; multiplier                                  ;
@@ -241,7 +241,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Sun Sep 24 10:29:37 2023
+    Info: Processing started: Mon Sep 25 17:06:58 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off project -c project
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file src/top_level.vhd
@@ -257,7 +257,7 @@ Info (21057): Implemented 50 device resources after synthesis - the final resour
     Info (21061): Implemented 34 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4652 megabytes
-    Info: Processing ended: Sun Sep 24 10:29:39 2023
+    Info: Processing ended: Mon Sep 25 17:07:00 2023
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

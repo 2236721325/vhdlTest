@@ -1,5 +1,5 @@
 Analysis & Synthesis report for project
-Sun Sep 24 21:09:14 2023
+Mon Oct 09 13:19:50 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -43,15 +43,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Sep 24 21:09:14 2023       ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 09 13:19:50 2023       ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                      ; project                                     ;
 ; Top-level Entity Name              ; pulseGenerator                              ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 302                                         ;
-;     Total combinational functions  ; 302                                         ;
-;     Dedicated logic registers      ; 97                                          ;
-; Total registers                    ; 97                                          ;
+; Total logic elements               ; 278                                         ;
+;     Total combinational functions  ; 278                                         ;
+;     Dedicated logic registers      ; 130                                         ;
+; Total registers                    ; 130                                         ;
 ; Total pins                         ; 7                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -156,11 +156,12 @@ applicable agreement for further details.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ; < 0.1%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -178,28 +179,28 @@ applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 302         ;
+; Estimated Total logic elements              ; 278         ;
 ;                                             ;             ;
-; Total combinational functions               ; 302         ;
+; Total combinational functions               ; 278         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 32          ;
-;     -- 3 input functions                    ; 125         ;
-;     -- <=2 input functions                  ; 145         ;
+;     -- 4 input functions                    ; 10          ;
+;     -- 3 input functions                    ; 189         ;
+;     -- <=2 input functions                  ; 79          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 116         ;
+;     -- normal mode                          ; 92          ;
 ;     -- arithmetic mode                      ; 186         ;
 ;                                             ;             ;
-; Total registers                             ; 97          ;
-;     -- Dedicated logic registers            ; 97          ;
+; Total registers                             ; 130         ;
+;     -- Dedicated logic registers            ; 130         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 7           ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 97          ;
-; Total fan-out                               ; 980         ;
-; Average fan-out                             ; 2.37        ;
+; Maximum fan-out                             ; 66          ;
+; Total fan-out                               ; 1127        ;
+; Average fan-out                             ; 2.67        ;
 +---------------------------------------------+-------------+
 
 
@@ -208,7 +209,7 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |pulseGenerator            ; 302 (302)         ; 97 (97)      ; 0           ; 0            ; 0       ; 0         ; 7    ; 0            ; |pulseGenerator     ;              ;
+; |pulseGenerator            ; 278 (278)         ; 130 (130)    ; 0           ; 0            ; 0       ; 0         ; 7    ; 0            ; |pulseGenerator     ;              ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -218,12 +219,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 97    ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 130   ;
+; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 64    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -233,19 +234,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------+---------+
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
-; m[12]                                   ; 1       ;
-; m[9]                                    ; 1       ;
-; m[8]                                    ; 1       ;
-; m[7]                                    ; 1       ;
-; m[3]                                    ; 1       ;
-; n[13]                                   ; 1       ;
-; n[10]                                   ; 1       ;
-; n[9]                                    ; 1       ;
-; n[8]                                    ; 1       ;
-; n[3]                                    ; 1       ;
-; n[2]                                    ; 1       ;
-; n[1]                                    ; 1       ;
-; n[0]                                    ; 1       ;
+; m[12]                                   ; 2       ;
+; m[9]                                    ; 2       ;
+; m[8]                                    ; 2       ;
+; m[7]                                    ; 2       ;
+; m[3]                                    ; 2       ;
+; n[13]                                   ; 2       ;
+; n[10]                                   ; 2       ;
+; n[9]                                    ; 2       ;
+; n[8]                                    ; 2       ;
+; n[3]                                    ; 2       ;
+; n[2]                                    ; 2       ;
+; n[1]                                    ; 2       ;
+; n[0]                                    ; 2       ;
 ; Total number of inverted registers = 13 ;         ;
 +-----------------------------------------+---------+
 
@@ -256,7 +257,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
 ; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |pulseGenerator|counter[31] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |pulseGenerator|m           ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |pulseGenerator|n[5]        ;
+; 4:1                ; 27 bits   ; 54 LEs        ; 27 LEs               ; 27 LEs                 ; Yes        ; |pulseGenerator|m[13]       ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |pulseGenerator|n[9]        ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseGenerator|m[7]        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
 
 
@@ -265,7 +269,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -275,7 +279,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Sun Sep 24 21:09:09 2023
+    Info: Processing started: Mon Oct 09 13:19:41 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off project -c project
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file src/top_level.vhd
@@ -285,14 +289,14 @@ Info (12127): Elaborating entity "pulseGenerator" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 360 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 285 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 353 logic cells
+    Info (21061): Implemented 278 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4656 megabytes
-    Info: Processing ended: Sun Sep 24 21:09:14 2023
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4648 megabytes
+    Info: Processing ended: Mon Oct 09 13:19:50 2023
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:03
 
 
