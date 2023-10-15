@@ -1,12 +1,12 @@
-Fitter Status : Successful - Mon Oct 09 13:20:12 2023
+Fitter Status : Successful - Mon Oct 09 08:27:38 2023
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
 Revision Name : project
 Top-level Entity Name : pulseGenerator
 Family : Cyclone IV E
 Device : EP4CE10F17C8
 Timing Models : Final
-Total logic elements : 279 / 10,320 ( 3 % )
-    Total combinational functions : 278 / 10,320 ( 3 % )
+Total logic elements : 278 / 10,320 ( 3 % )
+    Total combinational functions : 277 / 10,320 ( 3 % )
     Dedicated logic registers : 130 / 10,320 ( 1 % )
 Total registers : 130
 Total pins : 7 / 180 ( 4 % )

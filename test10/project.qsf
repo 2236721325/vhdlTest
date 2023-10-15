@@ -68,5 +68,5 @@ set_location_assignment PIN_B9 -to fout
 set_location_assignment PIN_M15 -to frequency_add
 set_location_assignment PIN_M16 -to frequency_sub
 set_location_assignment PIN_T2 -to reset
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/LearnNote/collegeNote/test_all/test10/Waveform.vwf"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

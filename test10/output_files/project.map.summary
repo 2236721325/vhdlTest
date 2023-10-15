@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Mon Oct 09 13:19:50 2023
+Analysis & Synthesis Status : Successful - Mon Oct 09 08:27:30 2023
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
 Revision Name : project
 Top-level Entity Name : pulseGenerator
 Family : Cyclone IV E
-Total logic elements : 278
-    Total combinational functions : 278
+Total logic elements : 277
+    Total combinational functions : 277
     Dedicated logic registers : 130
 Total registers : 130
 Total pins : 7

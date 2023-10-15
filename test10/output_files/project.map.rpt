@@ -1,5 +1,5 @@
 Analysis & Synthesis report for project
-Mon Oct 09 13:19:50 2023
+Mon Oct 09 08:27:30 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -43,13 +43,13 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 09 13:19:50 2023       ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 09 08:27:30 2023       ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                      ; project                                     ;
 ; Top-level Entity Name              ; pulseGenerator                              ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 278                                         ;
-;     Total combinational functions  ; 278                                         ;
+; Total logic elements               ; 277                                         ;
+;     Total combinational functions  ; 277                                         ;
 ;     Dedicated logic registers      ; 130                                         ;
 ; Total registers                    ; 130                                         ;
 ; Total pins                         ; 7                                           ;
@@ -179,16 +179,16 @@ applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 278         ;
+; Estimated Total logic elements              ; 277         ;
 ;                                             ;             ;
-; Total combinational functions               ; 278         ;
+; Total combinational functions               ; 277         ;
 ; Logic element usage by number of LUT inputs ;             ;
 ;     -- 4 input functions                    ; 10          ;
 ;     -- 3 input functions                    ; 189         ;
-;     -- <=2 input functions                  ; 79          ;
+;     -- <=2 input functions                  ; 78          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 92          ;
+;     -- normal mode                          ; 91          ;
 ;     -- arithmetic mode                      ; 186         ;
 ;                                             ;             ;
 ; Total registers                             ; 130         ;
@@ -199,7 +199,7 @@ applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ; Maximum fan-out node                        ; clock~input ;
 ; Maximum fan-out                             ; 66          ;
-; Total fan-out                               ; 1127        ;
+; Total fan-out                               ; 1125        ;
 ; Average fan-out                             ; 2.67        ;
 +---------------------------------------------+-------------+
 
@@ -209,7 +209,7 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |pulseGenerator            ; 278 (278)         ; 130 (130)    ; 0           ; 0            ; 0       ; 0         ; 7    ; 0            ; |pulseGenerator     ;              ;
+; |pulseGenerator            ; 277 (277)         ; 130 (130)    ; 0           ; 0            ; 0       ; 0         ; 7    ; 0            ; |pulseGenerator     ;              ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -257,10 +257,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
 ; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |pulseGenerator|counter[31] ;
-; 4:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |pulseGenerator|n[5]        ;
-; 4:1                ; 27 bits   ; 54 LEs        ; 27 LEs               ; 27 LEs                 ; Yes        ; |pulseGenerator|m[13]       ;
+; 4:1                ; 27 bits   ; 54 LEs        ; 27 LEs               ; 27 LEs                 ; Yes        ; |pulseGenerator|m[31]       ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |pulseGenerator|n[12]       ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseGenerator|m[8]        ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |pulseGenerator|n[9]        ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pulseGenerator|m[7]        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
 
 
@@ -269,7 +269,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -279,7 +279,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Mon Oct 09 13:19:41 2023
+    Info: Processing started: Mon Oct 09 08:27:27 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off project -c project
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file src/top_level.vhd
@@ -294,9 +294,9 @@ Info (21057): Implemented 285 device resources after synthesis - the final resou
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 278 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4648 megabytes
-    Info: Processing ended: Mon Oct 09 13:19:50 2023
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 4644 megabytes
+    Info: Processing ended: Mon Oct 09 08:27:30 2023
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

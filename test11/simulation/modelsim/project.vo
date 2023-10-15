@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.0 Build 156 04/24/2013 SJ Full Version"
 
-// DATE "09/24/2023 21:38:17"
+// DATE "10/09/2023 08:34:55"
 
 // 
 // Device: Altera EP4CE10F17C8 Package FBGA256
@@ -39,10 +39,10 @@ output 	Q;
 output 	Qn;
 
 // Design Ports Information
-// Q	=>  Location: PIN_C2,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Qn	=>  Location: PIN_B1,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// R	=>  Location: PIN_F3,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// S	=>  Location: PIN_D1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Q	=>  Location: PIN_N6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Qn	=>  Location: PIN_N5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// R	=>  Location: PIN_R10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// S	=>  Location: PIN_T10,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -56,26 +56,26 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
-wire \R~input_o ;
+wire \S~input_o ;
 wire \Q~output_o ;
 wire \Qn~output_o ;
-wire \S~input_o ;
+wire \R~input_o ;
 wire \comb~1_combout ;
 wire \comb~0_combout ;
 wire \Q$latch~combout ;
 
 
-// Location: IOIBUF_X0_Y21_N8
-cycloneive_io_ibuf \R~input (
-	.i(R),
+// Location: IOIBUF_X21_Y0_N1
+cycloneive_io_ibuf \S~input (
+	.i(S),
 	.ibar(gnd),
-	.o(\R~input_o ));
+	.o(\S~input_o ));
 // synopsys translate_off
-defparam \R~input .bus_hold = "false";
-defparam \R~input .simulate_z_as = "z";
+defparam \S~input .bus_hold = "false";
+defparam \S~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOOBUF_X0_Y22_N16
+// Location: IOOBUF_X7_Y0_N16
 cycloneive_io_obuf \Q~output (
 	.i(\Q$latch~combout ),
 	.oe(vcc),
@@ -88,7 +88,7 @@ defparam \Q~output .bus_hold = "false";
 defparam \Q~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X0_Y22_N2
+// Location: IOOBUF_X7_Y0_N23
 cycloneive_io_obuf \Qn~output (
 	.i(!\Q$latch~combout ),
 	.oe(vcc),
@@ -101,64 +101,64 @@ defparam \Qn~output .bus_hold = "false";
 defparam \Qn~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOIBUF_X0_Y21_N22
-cycloneive_io_ibuf \S~input (
-	.i(S),
+// Location: IOIBUF_X21_Y0_N8
+cycloneive_io_ibuf \R~input (
+	.i(R),
 	.ibar(gnd),
-	.o(\S~input_o ));
+	.o(\R~input_o ));
 // synopsys translate_off
-defparam \S~input .bus_hold = "false";
-defparam \S~input .simulate_z_as = "z";
+defparam \R~input .bus_hold = "false";
+defparam \R~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LCCOMB_X1_Y21_N10
+// Location: LCCOMB_X21_Y1_N2
 cycloneive_lcell_comb \comb~1 (
 // Equation(s):
 // \comb~1_combout  = (\S~input_o ) # (!\R~input_o )
 
-	.dataa(\R~input_o ),
+	.dataa(\S~input_o ),
 	.datab(gnd),
-	.datac(gnd),
-	.datad(\S~input_o ),
+	.datac(\R~input_o ),
+	.datad(gnd),
 	.cin(gnd),
 	.combout(\comb~1_combout ),
 	.cout());
 // synopsys translate_off
-defparam \comb~1 .lut_mask = 16'hFF55;
+defparam \comb~1 .lut_mask = 16'hAFAF;
 defparam \comb~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X1_Y21_N0
+// Location: LCCOMB_X21_Y1_N0
 cycloneive_lcell_comb \comb~0 (
 // Equation(s):
 // \comb~0_combout  = (\R~input_o ) # (!\S~input_o )
 
-	.dataa(\R~input_o ),
+	.dataa(\S~input_o ),
 	.datab(gnd),
-	.datac(gnd),
-	.datad(\S~input_o ),
+	.datac(\R~input_o ),
+	.datad(gnd),
 	.cin(gnd),
 	.combout(\comb~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \comb~0 .lut_mask = 16'hAAFF;
+defparam \comb~0 .lut_mask = 16'hF5F5;
 defparam \comb~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X1_Y21_N12
+// Location: LCCOMB_X21_Y1_N20
 cycloneive_lcell_comb Q$latch(
 // Equation(s):
 // \Q$latch~combout  = (\comb~0_combout  & ((\Q$latch~combout ) # (!\comb~1_combout )))
 
-	.dataa(\comb~1_combout ),
-	.datab(\comb~0_combout ),
-	.datac(gnd),
+	.dataa(gnd),
+	.datab(\comb~1_combout ),
+	.datac(\comb~0_combout ),
 	.datad(\Q$latch~combout ),
 	.cin(gnd),
 	.combout(\Q$latch~combout ),
 	.cout());
 // synopsys translate_off
-defparam Q$latch.lut_mask = 16'hCC44;
+defparam Q$latch.lut_mask = 16'hF030;
 defparam Q$latch.sum_lutc_input = "datac";
 // synopsys translate_on
 

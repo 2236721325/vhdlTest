@@ -31,9 +31,6 @@ begin
             else
                 slow_counter <= slow_counter + 1;
             end if;
-			
-
-
 			if(reset='0') then
 				counter <=0;
 			else 
@@ -45,7 +42,7 @@ begin
 				fout<='0';
 			else
 				counter<=0;
-				fout<='1';
+				fout<='0';
 			end if;
 		end if;
     end process;
@@ -58,16 +55,16 @@ begin
 				m <= 5000;
 			end if;
 			if(duty_sub='0') then 
-				n<=n-1;
-			end if;
-			if(duty_add='0') then 
-				n<=n+1;
-			end if;
-			if(frequency_sub='0') then 
 				m<=m-1;
 			end if;
-			if(frequency_add='0') then 
+			if(duty_add='0') then 
 				m<=m+1;
+			end if;
+			if(frequency_sub='0') then 
+				n<=n-1;
+			end if;
+			if(frequency_add='0') then 
+				n<=n+1;
 			end if;
 		end if;
 	end process;
