@@ -58,14 +58,30 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_global_assignment -name VHDL_FILE src/top_level.vhd
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_location_assignment PIN_R10 -to R
-set_location_assignment PIN_T10 -to S
-set_location_assignment PIN_N6 -to Q
-set_location_assignment PIN_N5 -to Qn
 set_global_assignment -name VHDL_FILE src/digitalTube.vhd
 set_global_assignment -name VHDL_FILE src/keyBoard.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_location_assignment PIN_M1 -to clock
+set_location_assignment PIN_P9 -to rows[0]
+set_location_assignment PIN_M9 -to rows[1]
+set_location_assignment PIN_M10 -to rows[2]
+set_location_assignment PIN_P11 -to rows[3]
+set_location_assignment PIN_T11 -to cols[0]
+set_location_assignment PIN_R11 -to cols[1]
+set_location_assignment PIN_K9 -to cols[2]
+set_location_assignment PIN_L9 -to cols[3]
+set_location_assignment PIN_D16 -to segment[0]
+set_location_assignment PIN_E9 -to segment[1]
+set_location_assignment PIN_C9 -to segment[2]
+set_location_assignment PIN_D9 -to segment[3]
+set_location_assignment PIN_E10 -to segment[4]
+set_location_assignment PIN_C11 -to segment[5]
+set_location_assignment PIN_D11 -to segment[6]
+set_location_assignment PIN_D12 -to segment[7]
+set_location_assignment PIN_F15 -to selector[0]
+set_location_assignment PIN_C16 -to selector[1]
+set_location_assignment PIN_D15 -to selector[2]
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/LearnNote/collegeNote/test_all/test12/Waveform.vwf"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

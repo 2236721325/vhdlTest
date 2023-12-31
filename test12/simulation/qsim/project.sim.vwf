@@ -567,8 +567,8 @@ TRANSITION_LIST("segment[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 975.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 995.0;
 	}
 }
 TRANSITION_LIST("segment[4]")
@@ -576,8 +576,8 @@ TRANSITION_LIST("segment[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 975.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 995.0;
 	}
 }
 TRANSITION_LIST("segment[3]")
@@ -585,8 +585,8 @@ TRANSITION_LIST("segment[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 975.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 995.0;
 	}
 }
 TRANSITION_LIST("segment[2]")
@@ -610,8 +610,8 @@ TRANSITION_LIST("segment[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 975.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 995.0;
 	}
 }
 TRANSITION_LIST("selector[2]")

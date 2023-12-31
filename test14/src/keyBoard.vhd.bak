@@ -1,0 +1,61 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity  KeyBoard is
+	port(
+		clock:in std_logic;
+		rows:in std_logic_vector(3 downto 0);
+		cols:in std_logic_vector(3 downto 0);
+		result:out std_logic(3 downto 0)
+	);
+end KeyBoard;
+
+
+architecture behave of KeyBoard is	
+	signal rowIndex:integer:=-1;
+	signal colIndex:integer:=-1;
+begin
+	process(clock)
+	begin
+		if rising_edge(clock) then 
+			for i in 0 to 3 loop
+				if rows(i)='0' then 
+					rowIndex<=i;
+				end if;
+				if cols(i)='0' then
+					colIndex<=i;
+				end if;
+			end loop
+			
+			if rowIndex=-1 or colIndex=-1 then
+				result<="0000";
+			else
+				if rowIndex<3 and colIndex<3 then
+					result<= rowIndex*3+colIndex+1;
+				end if;
+				
+				if colIndex=3 then 
+					result<= rowIndex+10;
+				end if;
+				
+				if rowIndex=3 then
+					case colIndex is
+						when 0=> result<="1110";
+						when 1=> result<="0000";
+						when 2=> result<="1111";
+					end case;
+				end if;
+			
+			end if;
+			
+			
+			
+		end if;
+		
+	
+		
+	end process;
+
+end behave;

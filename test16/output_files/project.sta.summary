@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clock'
+Slack : -3.586
+TNS   : -43.839
+
+Type  : Slow 1200mV 85C Model Setup 'clock_generator:clock_generator_inst|tmp_clock_1s'
+Slack : -2.565
+TNS   : -17.307
+
+Type  : Slow 1200mV 85C Model Setup 'clock_generator:clock_generator_inst|tmp_clock_05s'
+Slack : 0.114
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clock'
+Slack : -0.500
+TNS   : -0.500
+
+Type  : Slow 1200mV 85C Model Hold 'clock_generator:clock_generator_inst|tmp_clock_1s'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clock_generator:clock_generator_inst|tmp_clock_05s'
+Slack : 0.497
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -32.740
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_generator:clock_generator_inst|tmp_clock_1s'
+Slack : -1.487
+TNS   : -14.870
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_generator:clock_generator_inst|tmp_clock_05s'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Setup 'clock'
+Slack : -3.274
+TNS   : -39.094
+
+Type  : Slow 1200mV 0C Model Setup 'clock_generator:clock_generator_inst|tmp_clock_1s'
+Slack : -2.259
+TNS   : -14.974
+
+Type  : Slow 1200mV 0C Model Setup 'clock_generator:clock_generator_inst|tmp_clock_05s'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clock'
+Slack : -0.427
+TNS   : -0.427
+
+Type  : Slow 1200mV 0C Model Hold 'clock_generator:clock_generator_inst|tmp_clock_1s'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clock_generator:clock_generator_inst|tmp_clock_05s'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -32.740
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_generator:clock_generator_inst|tmp_clock_1s'
+Slack : -1.487
+TNS   : -14.870
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_generator:clock_generator_inst|tmp_clock_05s'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Fast 1200mV 0C Model Setup 'clock'
+Slack : -0.930
+TNS   : -8.015
+
+Type  : Fast 1200mV 0C Model Setup 'clock_generator:clock_generator_inst|tmp_clock_1s'
+Slack : -0.555
+TNS   : -1.917
+
+Type  : Fast 1200mV 0C Model Setup 'clock_generator:clock_generator_inst|tmp_clock_05s'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock'
+Slack : -0.320
+TNS   : -0.506
+
+Type  : Fast 1200mV 0C Model Hold 'clock_generator:clock_generator_inst|tmp_clock_1s'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock_generator:clock_generator_inst|tmp_clock_05s'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -24.398
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_generator:clock_generator_inst|tmp_clock_1s'
+Slack : -1.000
+TNS   : -10.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_generator:clock_generator_inst|tmp_clock_05s'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

@@ -1,0 +1,246 @@
+Partition Merge report for project
+Mon Dec 18 17:08:39 2023
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Partition Merge Partition Statistics
+  5. Partition Merge Partition Pin Processing
+  6. Partition Merge Resource Usage Summary
+  7. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Partition Merge Summary                                                          ;
++------------------------------------+---------------------------------------------+
+; Partition Merge Status             ; Successful - Mon Dec 18 17:08:39 2023       ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
+; Revision Name                      ; project                                     ;
+; Top-level Entity Name              ; top_level                                   ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 47 / 10,320 ( < 1 % )                       ;
+;     Total combinational functions  ; 47 / 10,320 ( < 1 % )                       ;
+;     Dedicated logic registers      ; 23 / 10,320 ( < 1 % )                       ;
+; Total registers                    ; 23                                          ;
+; Total pins                         ; 14 / 180 ( 8 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 423,936 ( 0 % )                         ;
+; Embedded Multiplier 9-bit elements ; 0 / 46 ( 0 % )                              ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                            ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Post-Fit          ; Post-Fit               ;                                ;
+; hard_block:auto_generated_inst ; Auto-generated ; Source File       ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                                                ;
++---------------------------------------------+----------------------+--------------------------------+
+; Statistic                                   ; Top                  ; hard_block:auto_generated_inst ;
++---------------------------------------------+----------------------+--------------------------------+
+; Estimated Total logic elements              ; 47 / 10320 ( < 1 % ) ; 0 / 10320 ( 0 % )              ;
+;                                             ;                      ;                                ;
+; Total combinational functions               ; 47                   ; 0                              ;
+; Logic element usage by number of LUT inputs ;                      ;                                ;
+;     -- 4 input functions                    ; 31                   ; 0                              ;
+;     -- 3 input functions                    ; 10                   ; 0                              ;
+;     -- <=2 input functions                  ; 6                    ; 0                              ;
+;                                             ;                      ;                                ;
+; Logic elements by mode                      ;                      ;                                ;
+;     -- normal mode                          ; 47                   ; 0                              ;
+;     -- arithmetic mode                      ; 0                    ; 0                              ;
+;                                             ;                      ;                                ;
+; Total registers                             ; 23                   ; 0                              ;
+;     -- Dedicated logic registers            ; 23 / 10320 ( < 1 % ) ; 0 / 10320 ( 0 % )              ;
+;                                             ;                      ;                                ;
+; Virtual pins                                ; 0                    ; 0                              ;
+; I/O pins                                    ; 14                   ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0 / 46 ( 0 % )       ; 0 / 46 ( 0 % )                 ;
+; Total memory bits                           ; 0                    ; 0                              ;
+; Total RAM block bits                        ; 0                    ; 0                              ;
+;                                             ;                      ;                                ;
+; Connections                                 ;                      ;                                ;
+;     -- Input Connections                    ; 0                    ; 0                              ;
+;     -- Registered Input Connections         ; 0                    ; 0                              ;
+;     -- Output Connections                   ; 0                    ; 0                              ;
+;     -- Registered Output Connections        ; 0                    ; 0                              ;
+;                                             ;                      ;                                ;
+; Internal Connections                        ;                      ;                                ;
+;     -- Total Connections                    ; 238                  ; 0                              ;
+;     -- Registered Connections               ; 90                   ; 0                              ;
+;                                             ;                      ;                                ;
+; External Connections                        ;                      ;                                ;
+;     -- Top                                  ; 0                    ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 0                    ; 0                              ;
+;                                             ;                      ;                                ;
+; Partition Interface                         ;                      ;                                ;
+;     -- Input Ports                          ; 3                    ; 0                              ;
+;     -- Output Ports                         ; 11                   ; 0                              ;
+;     -- Bidir Ports                          ; 0                    ; 0                              ;
+;                                             ;                      ;                                ;
+; Registered Ports                            ;                      ;                                ;
+;     -- Registered Input Ports               ; 0                    ; 0                              ;
+;     -- Registered Output Ports              ; 0                    ; 0                              ;
+;                                             ;                      ;                                ;
+; Port Connectivity                           ;                      ;                                ;
+;     -- Input Ports driven by GND            ; 0                    ; 0                              ;
+;     -- Output Ports driven by GND           ; 0                    ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0                    ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0                    ; 0                              ;
+;     -- Input Ports with no Source           ; 0                    ; 0                              ;
+;     -- Output Ports with no Source          ; 0                    ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0                    ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0                    ; 0                              ;
++---------------------------------------------+----------------------+--------------------------------+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Pin Processing                                                                                 ;
++---------------------------+-----------+---------------+--------------------+---------------------------------------------+
+; Name                      ; Partition ; Type          ; Location           ; Status                                      ;
++---------------------------+-----------+---------------+--------------------+---------------------------------------------+
+; gclk                      ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- gclk               ; Top       ; Input Pad     ; IOPAD_X0_Y11_N21   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- gclk~input         ; Top       ; Input Buffer  ; IOIBUF_X0_Y11_N22  ; Preserved from Post-Fit or Imported Netlist ;
+;                           ;           ;               ;                    ;                                             ;
+; kb_clk                    ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- kb_clk             ; Top       ; Input Pad     ; IOPAD_X5_Y24_N7    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- kb_clk~input       ; Top       ; Input Buffer  ; IOIBUF_X5_Y24_N8   ; Preserved from Post-Fit or Imported Netlist ;
+;                           ;           ;               ;                    ;                                             ;
+; kb_dat                    ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- kb_dat             ; Top       ; Input Pad     ; IOPAD_X9_Y24_N21   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- kb_dat~input       ; Top       ; Input Buffer  ; IOIBUF_X9_Y24_N22  ; Preserved from Post-Fit or Imported Netlist ;
+;                           ;           ;               ;                    ;                                             ;
+; segment[0]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- segment[0]         ; Top       ; Output Pad    ; IOPAD_X34_Y19_N7   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- segment[0]~output  ; Top       ; Output Buffer ; IOOBUF_X34_Y19_N9  ; Preserved from Post-Fit or Imported Netlist ;
+;                           ;           ;               ;                    ;                                             ;
+; segment[1]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- segment[1]         ; Top       ; Output Pad    ; IOPAD_X18_Y24_N21  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- segment[1]~output  ; Top       ; Output Buffer ; IOOBUF_X18_Y24_N23 ; Preserved from Post-Fit or Imported Netlist ;
+;                           ;           ;               ;                    ;                                             ;
+; segment[2]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- segment[2]         ; Top       ; Output Pad    ; IOPAD_X18_Y24_N7   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- segment[2]~output  ; Top       ; Output Buffer ; IOOBUF_X18_Y24_N9  ; Preserved from Post-Fit or Imported Netlist ;
+;                           ;           ;               ;                    ;                                             ;
+; segment[3]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- segment[3]         ; Top       ; Output Pad    ; IOPAD_X18_Y24_N14  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- segment[3]~output  ; Top       ; Output Buffer ; IOOBUF_X18_Y24_N16 ; Preserved from Post-Fit or Imported Netlist ;
+;                           ;           ;               ;                    ;                                             ;
+; segment[4]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- segment[4]         ; Top       ; Output Pad    ; IOPAD_X28_Y24_N21  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- segment[4]~output  ; Top       ; Output Buffer ; IOOBUF_X28_Y24_N23 ; Preserved from Post-Fit or Imported Netlist ;
+;                           ;           ;               ;                    ;                                             ;
+; segment[5]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- segment[5]         ; Top       ; Output Pad    ; IOPAD_X23_Y24_N0   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- segment[5]~output  ; Top       ; Output Buffer ; IOOBUF_X23_Y24_N2  ; Preserved from Post-Fit or Imported Netlist ;
+;                           ;           ;               ;                    ;                                             ;
+; segment[6]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- segment[6]         ; Top       ; Output Pad    ; IOPAD_X32_Y24_N21  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- segment[6]~output  ; Top       ; Output Buffer ; IOOBUF_X32_Y24_N23 ; Preserved from Post-Fit or Imported Netlist ;
+;                           ;           ;               ;                    ;                                             ;
+; segment[7]                ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- segment[7]         ; Top       ; Output Pad    ; IOPAD_X30_Y24_N0   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- segment[7]~output  ; Top       ; Output Buffer ; IOOBUF_X30_Y24_N2  ; Preserved from Post-Fit or Imported Netlist ;
+;                           ;           ;               ;                    ;                                             ;
+; selector[0]               ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- selector[0]        ; Top       ; Output Pad    ; IOPAD_X34_Y18_N14  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- selector[0]~output ; Top       ; Output Buffer ; IOOBUF_X34_Y18_N16 ; Preserved from Post-Fit or Imported Netlist ;
+;                           ;           ;               ;                    ;                                             ;
+; selector[1]               ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- selector[1]        ; Top       ; Output Pad    ; IOPAD_X34_Y20_N7   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- selector[1]~output ; Top       ; Output Buffer ; IOOBUF_X34_Y20_N9  ; Preserved from Post-Fit or Imported Netlist ;
+;                           ;           ;               ;                    ;                                             ;
+; selector[2]               ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- selector[2]        ; Top       ; Output Pad    ; IOPAD_X34_Y19_N0   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- selector[2]~output ; Top       ; Output Buffer ; IOOBUF_X34_Y19_N2  ; Preserved from Post-Fit or Imported Netlist ;
+;                           ;           ;               ;                    ;                                             ;
++---------------------------+-----------+---------------+--------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                              ;
++---------------------------------------------+-----------------------+
+; Resource                                    ; Usage                 ;
++---------------------------------------------+-----------------------+
+; Estimated Total logic elements              ; 47 / 10,320 ( < 1 % ) ;
+;                                             ;                       ;
+; Total combinational functions               ; 47                    ;
+; Logic element usage by number of LUT inputs ;                       ;
+;     -- 4 input functions                    ; 31                    ;
+;     -- 3 input functions                    ; 10                    ;
+;     -- <=2 input functions                  ; 6                     ;
+;                                             ;                       ;
+; Logic elements by mode                      ;                       ;
+;     -- normal mode                          ; 47                    ;
+;     -- arithmetic mode                      ; 0                     ;
+;                                             ;                       ;
+; Total registers                             ; 23                    ;
+;     -- Dedicated logic registers            ; 23                    ;
+;     -- I/O registers                        ; 0                     ;
+;                                             ;                       ;
+; I/O pins                                    ; 14                    ;
+; Embedded Multiplier 9-bit elements          ; 0                     ;
+; Maximum fan-out node                        ; kb_clk~input          ;
+; Maximum fan-out                             ; 20                    ;
+; Total fan-out                               ; 238                   ;
+; Average fan-out                             ; 2.40                  ;
++---------------------------------------------+-----------------------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Partition Merge
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+    Info: Processing started: Mon Dec 18 17:08:38 2023
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off project -c project --merge=on
+Info (35006): Using previously generated Fitter netlist for partition "Top"
+Info (35002): Resolved and merged 1 partition(s)
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 62 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 11 output pins
+    Info (21061): Implemented 47 logic cells
+Info: Quartus II 64-Bit Partition Merge was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4617 megabytes
+    Info: Processing ended: Mon Dec 18 17:08:39 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
